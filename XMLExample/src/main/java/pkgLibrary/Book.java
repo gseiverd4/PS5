@@ -38,9 +38,9 @@ public class Book {
 		ArrayList<Book> BookList = cat.getBooks();
 		Book BookID = null; 
 		
-		for (Book j : BookList )
-			if (j.getId().equals(id)) {
-				BookID = j;
+		for (Book i : BookList )
+			if (i.getId().equals(id)) {
+				BookID = i;
 			}
 				
 		if (BookID == null) {
@@ -68,8 +68,8 @@ public class Book {
 		cat.setId(CatalogID);
 		ArrayList<Book> BookList = cat.getBooks();
 		Book BookID = null;
-		for (Book j : BookList) {
-			if (j.getId().equals(BookInstance.getId())) {
+		for (Book i : BookList) {
+			if (i.getId().equals(BookInstance.getId())) {
 				throw new BookException("This book already exists");
 			}
 		}
