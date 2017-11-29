@@ -21,6 +21,8 @@ public class XMLReader {
 		
 		//	Increase the price of each book
 		IncreasePrice(cat,0.10);
+		SetCost(cat,0.80);
+		
 		
 		//	Write the XML file from 'cat' object
 		WriteXMLFile(cat);
@@ -30,6 +32,14 @@ public class XMLReader {
 
 	
 	
+	private static void SetCost(Catalog cat, double d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
 	private static Catalog ReadCatalog() {
 		Catalog cat = ReadXMLFile();
 		
